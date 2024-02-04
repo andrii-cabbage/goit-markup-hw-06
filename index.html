@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,7 +54,11 @@
               </a>
             </li>
             <li class="adress-item">
-              <a class="nav-link-mailphone" href="tel:+110001111111" target="_blank">
+              <a
+                class="nav-link-mailphone nav-link-mailphone-tablet"
+                href="tel:+110001111111"
+                target="_blank"
+              >
                 +11 (000) 111-11-11
               </a>
             </li>
@@ -148,7 +153,7 @@
 
       <section class="main-section section">
         <div class="container hero-container">
-          <h1 class="header-main">Effective Solutions for Your Business</h1>
+          <h1 class="header-main">Effective Solutions For Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
@@ -225,6 +230,7 @@
             <li class="image-group">
               <img
                 class="team-image"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Mark Guerrero photo"
                 width="264"
@@ -269,6 +275,7 @@
             <li class="image-group">
               <img
                 class="team-image"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Tom Ford photo"
                 width="264"
@@ -314,6 +321,7 @@
             <li class="image-group">
               <img
                 class="team-image"
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Camila Garcia photo"
                 width="264"
@@ -358,6 +366,7 @@
             <li class="image-group">
               <img
                 class="team-image"
+                srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
                 src="./images/img4.jpg"
                 alt="Daniel Wilson photo"
                 width="264"
@@ -410,13 +419,28 @@
           <ul class="portfolio-menu">
             <li class="portfolio-list">
               <div class="portfolio-animtext-content">
-                <img
-                  class="portfolio-image"
-                  src="./images/banking.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="./images/banking-mob.jpg 1x, ./images/banking-mob-2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="./images/banking-tab.jpg 1x, ./images/banking-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/banking.jpg 1x, ./images/banking-deskt-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+
+                  <img
+                    class="portfolio-image"
+                    src="./images/banking.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="portfolio-anim-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                   Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -430,13 +454,27 @@
 
             <li class="portfolio-list">
               <div class="portfolio-animtext-content">
-                <img
-                  class="portfolio-image"
-                  src="./images/payment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="./images/payment.jpg 1x, ./images/payment-deskt-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/payment-tab.jpg 1x, ./images/payment-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/payment-mob.jpg 1x, ./images/payment-mob-2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-image"
+                    src="./images/payment.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-anim-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -451,13 +489,27 @@
 
             <li class="portfolio-list">
               <div class="portfolio-animtext-content">
-                <img
-                  class="portfolio-image"
-                  src="./images/meditation.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="./images/meditation.jpg 1x, ./images/meditation-deskt-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/meditation-tab.jpg 1x, ./images/meditation-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/meditation-mob.jpg 1x, ./images/meditation-mob-2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-image"
+                    src="./images/meditation.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-anim-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -472,13 +524,27 @@
 
             <li class="portfolio-list">
               <div class="portfolio-animtext-content">
-                <img
-                  class="portfolio-image"
-                  src="./images/taxi.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="./images/taxi.jpg 1x, ./images/taxi-deskt-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/taxi-tab.jpg 1x, ./images/taxi-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/taxi-mob.jpg 1x, ./images/taxi-mob-2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-image"
+                    src="./images/taxi.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-anim-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -492,13 +558,27 @@
             </li>
             <li class="portfolio-list">
               <div class="portfolio-animtext-content">
-                <img
-                  class="portfolio-image"
-                  src="./images/illustration.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="./images/illustration.jpg 1x, ./images/illustration-deskt-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/illustration-tab.jpg 1x, ./images/illustration-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/illustration-mob.jpg 1x, ./images/illustration-mob-2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-image"
+                    src="./images/illustration.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-anim-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -512,13 +592,30 @@
             </li>
             <li class="portfolio-list">
               <div class="portfolio-animtext-content">
-                <img
-                  class="portfolio-image"
-                  src="./images/courses.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/courses.jpg    1x,
+                      ./images/courses-deskt-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="./images/courses-tab.jpg 1x, ./images/courses-tab-2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/courses-mob.jpg 1x, ./images/courses-mob-2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="portfolio-image"
+                    src="./images/courses.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-anim-text">
                   14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
@@ -666,10 +763,12 @@
                   <use href="./images/icons.svg#icon-Checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-link" href="" target="_blank" rel="noopener noreferrer "
-                >Privacy Policy</a
-              ></label
+              <div class="modal-mob-text">
+                I accept the terms and conditions of the
+                <a class="modal-link" href="" target="_blank" rel="noopener noreferrer"
+                  >Privacy Policy</a
+                >
+              </div></label
             >
           </div>
           <button type="submit" class="modal-submit-btn">Send</button>
