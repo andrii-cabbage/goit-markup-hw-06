@@ -206,7 +206,7 @@
   
     .main-section {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/header-bg.jpg);
+        url(../images/people-office.jpg);
       padding-top: 188px;
       padding-bottom: 188px;
       max-width: 1440px;
@@ -215,7 +215,7 @@
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .main-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-          url(../images/header-bg-2x.jpg);
+          url(../images/bg-hero-2x.jpg);
       }
     }
   
